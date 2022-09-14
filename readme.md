@@ -1,1 +1,1 @@
-[참고](https://ruslanspivak.com/lsbasi-part4/)
+[참고](https://ruslanspivak.com/lsbasi-part1/)
