@@ -211,7 +211,7 @@ class Var(AST):
         self.value = token.value
         
 class NoOp(AST):
-    pass
+    pass 
 
 class Program(AST):
     def __init__(self, name, block):

@@ -9,7 +9,7 @@ class LexerTestCase(unittest.TestCase):
     def test_tokens(self):
         from spi import (
             INTEGER_CONST, REAL_CONST, MUL, INTEGER_DIV, FLOAT_DIV, PLUS, MINUS, LPAREN, RPAREN,
-            ASSIGN, DOT, ID, SEMI, BEGIN, END
+            ASSIGN, DOT, ID, SEMI, BEGIN, END, COLON
         )
         records = (
             ('234', INTEGER_CONST, 234),
@@ -26,6 +26,7 @@ class LexerTestCase(unittest.TestCase):
             ('number', ID, 'number'),
             (';', SEMI, ';'),
             ('BEGIN', BEGIN, 'BEGIN'),
+            (':', COLON, ':'),
             ('END', END, 'END'),
         )
         for text, tok_type, tok_val in records:
