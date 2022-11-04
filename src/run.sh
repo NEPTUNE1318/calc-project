@@ -1,3 +1,3 @@
 #!/bin/bash
 
-python3 main.py main.pas
+python3 main.py $1
